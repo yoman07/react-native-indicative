@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3E7B58A1CC2AC0600A0062D /* RNIndicative.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNIndicative.m */; };
+		39A685D921AECEA10045B5A6 /* IndicativeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A685D521AECEA00045B5A6 /* IndicativeEvent.m */; };
+		39A685DA21AECEA10045B5A6 /* Indicative.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A685D721AECEA00045B5A6 /* Indicative.m */; };
+		39A685DD21AED4450045B5A6 /* RNIndicative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A685DC21AED4450045B5A6 /* RNIndicative.swift */; };
+		39CC42D621AEDBF700911DA2 /* RNIndicativeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5881CC2AC0600A0062D /* RNIndicativeManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,8 +27,13 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNIndicative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNIndicative.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5881CC2AC0600A0062D /* RNIndicative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNIndicative.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* RNIndicative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNIndicative.m; sourceTree = "<group>"; };
+		39A685D521AECEA00045B5A6 /* IndicativeEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndicativeEvent.m; sourceTree = "<group>"; };
+		39A685D621AECEA00045B5A6 /* Indicative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Indicative.h; sourceTree = "<group>"; };
+		39A685D721AECEA00045B5A6 /* Indicative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Indicative.m; sourceTree = "<group>"; };
+		39A685D821AECEA00045B5A6 /* IndicativeEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndicativeEvent.h; sourceTree = "<group>"; };
+		39A685DB21AED4440045B5A6 /* RNIndicative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNIndicative-Bridging-Header.h"; sourceTree = "<group>"; };
+		39A685DC21AED4450045B5A6 /* RNIndicative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNIndicative.swift; sourceTree = "<group>"; };
+		B3E7B5881CC2AC0600A0062D /* RNIndicativeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNIndicativeManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,12 +55,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		39A685D421AECEA00045B5A6 /* Indicative */ = {
+			isa = PBXGroup;
+			children = (
+				39A685D521AECEA00045B5A6 /* IndicativeEvent.m */,
+				39A685D621AECEA00045B5A6 /* Indicative.h */,
+				39A685D721AECEA00045B5A6 /* Indicative.m */,
+				39A685D821AECEA00045B5A6 /* IndicativeEvent.h */,
+			);
+			path = Indicative;
+			sourceTree = "<group>";
+		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				B3E7B5881CC2AC0600A0062D /* RNIndicative.h */,
-				B3E7B5891CC2AC0600A0062D /* RNIndicative.m */,
+				39A685D421AECEA00045B5A6 /* Indicative */,
+				B3E7B5881CC2AC0600A0062D /* RNIndicativeManager.m */,
+				39A685DC21AED4450045B5A6 /* RNIndicative.swift */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				39A685DB21AED4440045B5A6 /* RNIndicative-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,11 +103,12 @@
 		58B511D31A9E6C8500147676 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					58B511DA1A9E6C8500147676 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -112,7 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E7B58A1CC2AC0600A0062D /* RNIndicative.m in Sources */,
+				39A685D921AECEA10045B5A6 /* IndicativeEvent.m in Sources */,
+				39A685DD21AED4450045B5A6 /* RNIndicative.swift in Sources */,
+				39A685DA21AECEA10045B5A6 /* Indicative.m in Sources */,
+				39CC42D621AEDBF700911DA2 /* RNIndicativeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,14 +152,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -171,14 +204,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -196,6 +237,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -203,32 +245,43 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
-				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNIndicative;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		58B511F11A9E6C8500147676 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNIndicative;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNIndicative-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		58B511F11A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = RNIndicative;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNIndicative-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
