@@ -20,11 +20,17 @@ class Indicative {
   }
 
   addCommonProperties(properties) {
-    RNIndicative.addCommonProperties(properties);
+    RNIndicative.addCommonProperties(truncateParameters(properties));
   }
 
   addCommonProperty(name, value) {
-    RNIndicative.addCommonProperty(name, {value: value});
+    var truncatedValue = value;
+
+    if (isNaN(truncatedValue)) {
+      truncatedValue =  JSON.stringify(value).substring(0,maxLength);
+    }
+
+    RNIndicative.addCommonProperty(name, {value: truncatedValue});
   }
 
   removeCommonProperty(name) {
@@ -40,7 +46,7 @@ class Indicative {
   }
 
   recordWithProperties(eventName, properties) {
-    RNIndicative.recordWithProperties(eventName, properties);
+    RNIndicative.recordWithProperties(eventName, this.truncateParameters(properties));
   }
 
   recordWithUniqueKey(eventName, uniqueKey) {
@@ -48,7 +54,26 @@ class Indicative {
   }
 
   recordWithPropertiesUniqueKey(eventName, uniqueKey, properties) {
-    RNIndicative.recordWithPropertiesUniqueKey(eventName, uniqueKey, properties);
+    RNIndicative.recordWithPropertiesUniqueKey(eventName, uniqueKey, truncateParameters(properties));
+  }
+
+  truncateParameters(rawParams) {
+    var truncatedParams = {};
+    var maxLength = 244
+    for(var key in rawParams) {
+      var value = rawParams[key];
+  
+      if (value == undefined) {
+        continue;
+      }
+  
+      if (isNaN(value)) {
+        var value = JSON.stringify(value);
+        value =  value.substring(0,maxLength);
+      }
+      truncatedParams[key] = value;
+    }
+    return truncatedParams
   }
 }
 
