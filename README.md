@@ -36,9 +36,30 @@
 
 ## Usage
 ```javascript
-import RNIndicative from 'react-native-indicative';
+import Indicative from 'react-native-indicative';
 
-// TODO: What to do with the module?
-RNIndicative;
+Indicative.launch("YOUR-INDICATIVE-API-KEY");
+
+Indicative.record("App Open");
+
+Indicative.identifyUser("xyz5");
+
+Indicative.addCommonProperties({"property2": 1, "property2": "test"});
+
+Indicative.addCommonProperty("property3", "test2");
+
+Indicative.addCommonProperty("property4", "test4");
+
+Indicative.removeCommonProperty("property3");
+
+Indicative.clearCommonProperties();
+
+Indicative.addCommonProperty("property5", "test5");
+
+Indicative.recordWithProperties("App Open 2", {"app open property": 555});
+
+Indicative.recordWithUniqueKey("App Open 3", "unique key");
+ 
+Indicative.recordWithPropertiesUniqueKey("App Open 4", "unique key", {"app open property2": 555});
 ```
   

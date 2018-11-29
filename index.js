@@ -35,10 +35,6 @@ class Indicative {
     RNIndicative.clearCommonProperties();
   }
 
-  clearCommonProperties() {
-    RNIndicative.clearCommonProperties();
-  }
-
   record(eventName) {
     RNIndicative.record(eventName);
   }
