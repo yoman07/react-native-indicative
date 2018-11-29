@@ -5,6 +5,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
+import com.facebook.react.bridge.ReadableType;
 import com.indicative.client.android.Indicative;
 
 public class RNIndicativeModule extends ReactContextBaseJavaModule {
@@ -20,6 +21,7 @@ public class RNIndicativeModule extends ReactContextBaseJavaModule {
     public String getName() {
         return "RNIndicative";
     }
+
 
     @ReactMethod
     public void launch(String apiKey) {
@@ -42,13 +44,26 @@ public class RNIndicativeModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void addCommonProperty(String uniqueKey, Object value) {
-        if (value instanceof Integer) {
-            Indicative.addProperty(uniqueKey, (int) value);
-        } else if (value instanceof String) {
-            Indicative.addProperty(uniqueKey, (String) value);
-        } else if (value instanceof Boolean) {
-            Indicative.addProperty(uniqueKey, (boolean) value);
+    public void addCommonProperty(String uniqueKey, ReadableMap value) {
+
+        if (value == null) {
+            return;
+        }
+        String key = "value";
+
+        ReadableType readableType = value.getType("value");
+        switch (readableType) {
+            case Boolean:
+                Indicative.addProperty(uniqueKey, value.getBoolean(key));
+                break;
+            case Number:
+                Indicative.addProperty(uniqueKey, (int) value.getDouble(key));
+                break;
+            case String:
+                Indicative.addProperty(uniqueKey, value.getString(key));
+                break;
+            default:
+                throw new IllegalArgumentException("Could not convert object with key: " + key + ".");
         }
     }
 

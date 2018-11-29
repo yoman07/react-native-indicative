@@ -38,7 +38,7 @@ class RNIndicativeUtil {
         return result;
     }
 
-    private static Object toObject(@Nullable ReadableMap readableMap, String key) {
+    static Object toObject(@Nullable ReadableMap readableMap, String key) {
         if (readableMap == null) {
             return null;
         }

@@ -24,7 +24,7 @@ class Indicative {
   }
 
   addCommonProperty(name, value) {
-    RNIndicative.addCommonProperty(name, value);
+    RNIndicative.addCommonProperty(name, {value: value});
   }
 
   removeCommonProperty(name) {

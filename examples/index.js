@@ -19,7 +19,11 @@ Indicative.addCommonProperty("property3", "test2");
 
 Indicative.addCommonProperty("property4", "test4");
 
-Indicative.removeCommonProperty("property3");
+Indicative.addCommonProperty("propertyInteger", 5);
+
+Indicative.addCommonProperty("propertyBoolean", true);
+
+// Indicative.removeCommonProperty("property3");
 
 //Indicative.clearCommonProperties();
 

@@ -28,8 +28,9 @@ class RNIndicative: NSObject {
     }
     
     @objc(addCommonProperty:withValue:)
-    func addCommonProperties(name: String, value: Any) -> Void {
-        Indicative.addCommonProperty(value, forName: name)
+    func addCommonProperty(name: String, value: [AnyHashable : Any]?) -> Void {
+        guard let val = value?["value"] else { return }
+        Indicative.addCommonProperty(val, forName: name)
     }
     
     @objc(removeCommonProperty:)
