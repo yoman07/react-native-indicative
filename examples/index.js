@@ -7,7 +7,7 @@ import Indicative from 'react-native-indicative'
 
 AppRegistry.registerComponent(appName, () => App);
 
-Indicative.launch("9a54d507-4f85-4511-b16a-ead6d8ea3b2d");
+Indicative.launch("your-api-key-here");
 
 Indicative.record("App Open");
 
