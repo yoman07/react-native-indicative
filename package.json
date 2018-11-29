@@ -1,6 +1,6 @@
 {
   "name": "react-native-indicative",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "React Native iOS and Android wrapper for Indicative",
   "keywords": [
     "react-native"
