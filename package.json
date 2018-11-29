@@ -1,16 +1,9 @@
-
 {
   "name": "react-native-indicative",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "React Native iOS and Android wrapper for Indicative",
   "keywords": [
-    "react-native",
-    "react",
-    "react-component",
-    "indicative",
-    "analytics",
-    "ios",
-    "android"
+    "react-native"
   ],
   "repository": {
     "type": "git",
@@ -20,9 +13,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "react-native"
-  ],
   "author": {
     "name": "Roman Barzyczak",
     "email": "roman.barzyczak+web@gmail.com",
