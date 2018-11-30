@@ -66,6 +66,10 @@ class Indicative {
       if (value == undefined) {
         continue;
       }
+
+      if (Array.isArray(value) && value.length == 0) {
+        continue;
+      }
   
       if (isNaN(value)) {
         var value = JSON.stringify(value);
