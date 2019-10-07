@@ -6,13 +6,13 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   RNIndicative
                    DESC
-  s.homepage     = ""
+  s.homepage     = "https://github.com/yoman07/react-native-indicative"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "author@domain.cn" }
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/author/RNIndicative.git", :tag => "master" }
-  s.source_files  = "RNIndicative/**/*.{h,m}"
+  s.source_files  = "Indicative/**/*.{h,m}"
   s.requires_arc = true
 
 
