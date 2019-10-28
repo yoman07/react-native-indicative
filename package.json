@@ -1,9 +1,11 @@
 {
   "name": "react-native-indicative",
-  "version": "0.1.13",
+  "version": "0.2.0",
   "description": "React Native iOS and Android wrapper for Indicative",
   "keywords": [
-    "react-native"
+    "react-native",
+    "indicative",
+    "analytics"
   ],
   "repository": {
     "type": "git",
@@ -13,12 +15,23 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "homepage": "https://github.com/yoman07/react-native-indicative",
   "author": {
     "name": "Roman Barzyczak",
     "email": "roman.barzyczak+web@gmail.com",
     "url": "https://www.linkedin.com/in/barzyczak"
   },
+  "files": [
+    "LICENSE",
+    "ios/",
+    "android/",
+    "src/",
+    "index.js",
+    "README.md",
+    "RNIndicative.podspec"
+  ],
+  "dependencies": {},
   "peerDependencies": {
-    "react-native": "*"
+    "react-native": ">=0.60.0"
   }
 }
