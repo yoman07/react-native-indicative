@@ -33,6 +33,6 @@ repositories {
 
 dependencies {
     implementation 'com.facebook.react:react-native:+'
-    implementation 'com.indicative.client.android:Indicative-Android:1.0.1'
+    implementation 'com.indicative.client.android:Indicative-Android:1.1.0'
 }
   
